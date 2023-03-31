@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <h2 id="title">Classes: HTML List Binding</h2>
+  <ul id="myList">
+    To be filled by JavaScript
+    
+  </ul> -->
+
+
+
+<script src="ListBinding.js"></script>
+<!-- <script type="text/javascript">
+//Classes in Practice
+  const myList = document.getElementById('myList');
+  const listBinding = new ListBinding(myList); -->
+
+
+
+
+
+
+// =============================================================================
+/*
+    Class -> Object
+
+    Instance Properties: what they have
+      - name
+      - age
+      - height
+
+    Instance Methods: what they do
+      - talk
+      - run
+      - jump 
+*/
+
+//     class Rectangle {
+//       // Setup
+//       constructor (_width, _height, _color) {
+//         console.log('The Rectangle is being created!');
+
+//         this.width = _width;
+//         this.height = _height;
+//         this.color = _color;
+//       }
+
+//       getArea () {
+//         return this.width * this.height;
+//       }
+
+//       printDescription() {
+//         console.log(`I am a rectangle of ${this.width} x ${this.height} and I am ${this.color}`);
+//       }
+//     }
+
+//     let myRectangle1 = new Rectangle(5, 3, 'blue');
+//     let myRectangle2 = new Rectangle(10, 5, 'red');
+
+//     myRectangle2.printDescription();
+// =========================================================================================
+// get and set
+  // class Square {
+  //   constructor(_width) {
+  //     this.width = _width;
+  //     this.height = _width;
+  //     this.numOfRequestsForArea = 0;
+  //   }
+
+  //   get area () {
+  //     this.numOfRequestsForArea++;
+  //     return this.width * this.height;
+  //   }
+
+  //   set area (area) {
+  //     this.width = Math.sqrt(area);
+  //     this.height = this.width;
+  //   }
+  // }
+
+  // let square1 = new Square (4);
+  // // console.log(square1.area);
+
+  // square1.area = 25;
+  // // console.log(square1.width);
+  // // console.log(square1.height);
+
+  // console.log(square1.area);
+  // console.log(square1.area);
+  // console.log(square1.area);
+  // console.log(square1.area);
+
+  // console.log(square1.numOfRequestsForArea);
+
+// ==================================================================
+// Static Methods
+    // class Square {
+    //   constructor(_width) {
+    //     this.width = _width;
+    //     this.height = _width;
+    //   }
+
+    //   static equals (a, b) {
+    //     return a.width * a.height === b.width * b.height;
+    //   }
+
+    //   static isValidDimensions (width, height) {
+    //     return width === height;
+    //   }
+    // }
+
+    // let square1 = new Square(8);
+    // let square2 = new Square(9);
+
+    // // console.log(Square.equals(square1, square2));
+    // console.log(Square.isValidDimensions(7, 6));
+
+// ==========================================================================
+// Inheritance & Extends
+
+    //Parent and Child Class
+    // class Person {
+    //   constructor(_name, _age) {
+    //     this.name = _name;
+    //     this.age = _age;
+    //   }
+
+    //   describe() {
+    //     console.log(`I am ${this.name} and I am ${this.age} years old`);
+    //   }
+    // }
+
+    // class Programmer extends Person {
+    //   constructor (_name, _age, _yearsOfExperience) {
+    //     super(_name, _age);
+
+    //     //Custom behaviour
+    //     this.yearsOfExperience = _yearsOfExperience;
+    //   }
+
+    //   code () {
+    //     console.log(`${this.name} is coding`);
+    //   }
+    // }
+
+    // const programmers = [
+    //   new Programmer("Dom", 56, 12),
+    //   new Programmer("Jeff", 24, 4),
+    // ];
+
+    // function developSoftware(programmers) {
+    //   //Develop software
+    //   for (let programmer of programmers) {
+    //     programmer.code();
+    //   }
+    // }
+    // developSoftware(programmers);
+
+// ==============================================================================
+//Polymorphism
+
+//       class Animal {
+//         constructor(name) {
+//           this.name = name;
+//         }
+
+//         makeSound() {
+//           console.log("Generic Animal Sound!!");
+//         }
+//       }
+
+//       class Dog extends Animal {
+//         constructor (name) {
+//           super(name);
+//         }
+
+//         makeSound() {
+//           super.makeSound();
+//           console.log("Woof! Woof!");
+//         }
+//       }
+
+//       const a1 = new Animal("Dom");
+//       const a2 = new Dog("Jeff");
+
+//       a1.makeSound();
+//       a2.makeSound();
+
+// ==============================================================================
+
+
+
+
+<!-- </script> -->
+</body>
+</html>
